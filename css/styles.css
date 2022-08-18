@@ -1,0 +1,430 @@
+:root {
+  --main-title-color-white: #ffffff;
+  --secondary-color-darkgrey: #303030;
+  --accent-color-orange: #ff6c00;
+  --tipical-line-height-1-36: 1.36;
+}
+/* variables not only for color it's for any property
+font-family, font-size ect.
+*/
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.link {
+  text-decoration: none; /* without underline */
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* margin: 0 auto; same as below*/
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  /* font-style: normal; */
+  /* font-weight: 700; */
+  /* this is default value for h2 heading don't need it */
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: var(--tipical-line-height-1-36);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.after-title {
+  /* font-weight: 400; */
+  /** font-weight: 400 don't need here - default value*/
+  font-size: 18px;
+  line-height: 1.67; /* or 167% */
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  /* don't foget to set font-family because it's not inherits from parents */
+  /* you can set it by inherit */
+  /* font-family: inherit; */
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* ------------ Header ------------- */
+
+.header {
+  background-color: grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+/* .header-link { */
+/** font-family don't need here - inherits from body */
+/* font-family: 'Open Sans', sans-serif; */
+
+/** font-style: normal don't need here - default value*/
+/* font-style: normal; */
+/* font-weight: 600;
+font-size: 12px;
+line-height: 1.33;  */
+/* change for coefficient line-height: 16px;/font-size: 12px; result 1.33 without (px)*/
+/* letter-spacing: 0.1em;
+
+color: #ffffff;
+} */
+
+/* .header-tel {
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.1em; */
+/* text-transform: uppercase; */
+/* inside tel only digits - no need to use text-transform: uppercase; */
+
+/* color: #ffffff;
+} */
+
+/* .header-tel and  .header-link so you can put them together using comma(,) */
+.header-link,
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--main-title-color-white);
+  /* color: #ffffff; */
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: #ff6c00;
+}
+
+.header-btn {
+  color: var(--main-title-color-white);
+  /* color: #ffffff; */
+}
+
+/* ------------ Hero ------------- */
+
+.hero {
+  background-color: bisque;
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  /* line-height: 1.36; */
+  line-height: var(--tipical-line-height-1-36);
+  /* identical to box height */
+  letter-spacing: 0.2em;
+
+  color: var(--secondary-color-darkgrey);
+
+  transform: rotate(-90deg);
+}
+
+.hero-content {
+  padding: 272px 100px 206px 100px;
+}
+
+.hero-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  /* font-weight: 700; */
+  /* this is default value for heading don't need it */
+  font-size: 72px;
+  line-height: 1.18;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  color: var(--main-title-color-white);
+  /* color: #ffffff; */
+  margin-bottom: 20px;
+}
+
+.hero-after-title {
+  color: #9da4bd;
+  max-width: 360px;
+}
+
+/* ------------ About section ------------- */
+
+.about {
+  background-color: aqua;
+  /* padding-top: 130px; */
+  /* padding-bottom: 130px; */
+}
+
+/* .about-list {
+} */
+
+/* .about-item {
+} */
+
+.about-pre-title {
+  color: var(--secondary-color-darkgrey);
+  margin-bottom: 20px;
+}
+
+.about-title {
+  color: var(--secondary-color-darkgrey);
+  margin-bottom: 20px;
+}
+
+.about-after-title {
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  /* or 186% */
+
+  letter-spacing: 0.02em;
+
+  color: #555555;
+  margin-bottom: 40px;
+}
+.about-btn {
+  color: var(--secondary-color-darkgrey);
+}
+
+/* ------------ Prices ------------- */
+
+.prices {
+  background-color: rgb(242, 245, 73);
+  /* padding-top: 130px; */
+  /* padding-bottom: 130px; */
+}
+
+.prices-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+.prices-title {
+  /* color: #ffffff; */
+  color: var(--main-title-color-white);
+  margin-bottom: 44px;
+}
+
+.prices-list {
+  border: 1px solid blue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.prices-item {
+  margin-bottom: 20px;
+}
+
+.prices-list-text {
+  font-size: 18px;
+  line-height: 1.67;
+  /* identical to box height, or 167% */
+
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+.prices-btn {
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* ------------ Benefits ------------- */
+
+.benefits {
+  background-color: #9da4bd;
+  padding-top: 121px;
+  /* padding-bottom: 130px; goes from .section class*/
+}
+
+.benefits-list {
+}
+
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  border: 1px dotted green;
+  padding: 20px 24px;
+}
+
+.benefits-item span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: var(--tipical-line-height-1-36);
+  /* line-height: calc( 57 / 42 ); */
+  /* using calc function */
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-color-darkgrey);
+}
+.benefits-item sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  /* identical to box height */
+  text-align: center;
+  color: var(--accent-color-orange);
+}
+
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: var(--tipical-line-height-1-36);
+  text-align: center;
+  color: var(--secondary-color-darkgrey);
+}
+
+.benefits-pre-title {
+  color: var(--secondary-color-darkgrey);
+  margin-bottom: 20px;
+}
+
+.benefits-title {
+  color: var(--secondary-color-darkgrey);
+  margin-bottom: 20px;
+}
+
+.benefits-after-title {
+  color: #555555;
+}
+
+/* ------------ Barbers ------------- */
+
+.barbers {
+  background-color: tan;
+}
+
+.barbers-pre-title {
+  color: var(--secondary-color-darkgrey);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.barbers-title {
+  color: var(--secondary-color-darkgrey);
+}
+
+.barbers-list {
+}
+
+.barbers-item {
+}
+
+.barbers-item-title {
+  font-weight: 400;
+  /* you need 400 because default is 700 for headings */
+  font-size: 18px;
+  line-height: 1.39;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-color-darkgrey);
+  margin-bottom: 8px;
+}
+
+.barbers-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: var(--tipical-line-height-1-36);
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color-orange);
+  /* color: #FF6C00; */
+  margin-bottom: 30px;
+}
+
+.barbers-wrap {
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* ------------ Gallery ------------- */
+
+.gallery {
+  background-color: pink;
+}
+
+.gallery-pre-title {
+  color: var(--secondary-color-darkgrey);
+}
